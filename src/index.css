@@ -16,5 +16,34 @@
   margin: 10px;
 }
 .card {
-  margin-bottom: 10px
+  margin-bottom: 20px
 }
+
+.link:hover {
+  color: yellow;
+  /* border-color: yellow; */
+}
+.container {
+  display: flex;
+  justify-content: center;
+  border-style: solid;
+}
+.displaybox {
+  width: 90%;
+}
+.cardholder {
+  max-width: 100%;
+}
+.svg-container {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media Queries */
+@media (max-width: 760px) {
+  .displaybox {
+    width: 100%;
+  }
+
+  }
+  

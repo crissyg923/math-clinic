@@ -10,6 +10,7 @@ import App from './App';
 import ErrorPage from './pages/ErrorPage.jsx';
 import HomePage from './pages/HomePage';
 import Fractions from './pages/Fractions'
+import Divide from './pages/Fractions/Divide/DivideFract.jsx'
 
 import { ChakraProvider } from '@chakra-ui/react'
 
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: 'fractions',
         element: <Fractions />,
+      },
+      {
+        path: 'fractions/divide',
+        element: <Divide />,
       },
       // {
       //   path: 'contact',
