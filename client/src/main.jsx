@@ -14,6 +14,8 @@ import Divide from './pages/Fractions/Divide/DivideFract.jsx'
 
 import { ChakraProvider } from '@chakra-ui/react'
 
+
+
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
   {
