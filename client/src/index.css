@@ -5,7 +5,7 @@
 
 }
 * {
-  margin: 0;
+  margin: 10px;
   padding: 0;
   /* box-sizing: border-box; */
 }
@@ -27,6 +27,7 @@
   display: flex;
   justify-content: center;
   border-style: solid;
+  
 }
 .displaybox {
   width: 90%;
@@ -37,6 +38,9 @@
 .svg-container {
   max-width: 100%;
   height: auto;
+}
+.resultsbox {
+  color: black;
 }
 
 /* Media Queries */

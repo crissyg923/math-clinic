@@ -11,6 +11,7 @@ import ErrorPage from './pages/ErrorPage.jsx';
 import HomePage from './pages/HomePage';
 import Fractions from './pages/Fractions'
 import Divide from './pages/Fractions/Divide/DivideFract.jsx'
+import Home from './pages/Language.jsx';
 
 import { ChakraProvider } from '@chakra-ui/react'
 
@@ -25,14 +26,18 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
+        element: <Home />
+      },
+      {
+        path: 'english',
         element: <HomePage />,
       },
       {
-        path: 'fractions',
+        path: 'english/fractions',
         element: <Fractions />,
       },
       {
-        path: 'fractions/divide',
+        path: 'english/fractions/divide',
         element: <Divide />,
       },
       // {

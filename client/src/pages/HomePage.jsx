@@ -6,7 +6,7 @@ export default function HomePage() {
         <div className="home">
        
 
-        <Link className="link" style={{ textDecoration: 'none' }} to="/fractions">
+        <Link className="link" style={{ textDecoration: 'none' }} to="/english/fractions">
         
         <Card className="card" boxShadow='dark-lg' p='6' rounded='md' bg='white'>
             

@@ -16,7 +16,7 @@ export default function HomePage() {
       </Link>
       </div>
       <div className="cardholder">
-      <Link to="/fractions/divide" style={{ textDecoration: 'none' }}>
+      <Link to="/english/fractions/divide" style={{ textDecoration: 'none' }}>
       <Card className='card'>
       <CardBody>
         <Heading>Dividing Fractions</Heading>
