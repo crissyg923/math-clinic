@@ -26,7 +26,8 @@
 .container {
   display: flex;
   justify-content: center;
-  border-style: solid; 
+  border-style: solid;
+  padding-top: 5%; 
 }
 .displaybox {
   width: 90%;

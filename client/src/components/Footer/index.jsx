@@ -6,14 +6,14 @@ function Footer () {
 
     return (
     <footer className="footer">
-        <div className="container">
-        <div className="content">
+        <div className="footercontainer">
+        
             <h5>
         <FontAwesomeIcon icon={ faCopyright } size="1x" /> 
         2024 Colbert
         </h5>
         </div>
-        </div>
+        
     </footer>
     );
   }

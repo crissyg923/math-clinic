@@ -1,6 +1,6 @@
 import { ReactSVG } from "react-svg";
-import divfrac from '../../../../images/dividing-fract.svg'
-import { Button, ButtonGroup, Container } from '@chakra-ui/react'
+import divfrac from '../../../../images/new-dividing-fract.svg'
+import { Button, ButtonGroup, Container, Center } from '@chakra-ui/react'
 import { useState } from 'react';
 
 
@@ -53,14 +53,17 @@ const fetchChatCompletion = async () => {
     //  )}
     //  </div>
     // </div>
-    <Container maxW='2xl' bg='blue.600' centerContent>
+    <div className="container">
+    <Container maxW='2xl'>
     <div className="col">
-  <div className="displaybox" style={{border: '3px solid green'}}>
+  <div className="displaybox">
 
     <ReactSVG src={divfrac} className="svg-container" />
-    </div>
-   {/* <button onClick={() => fetchChatCompletion}></button>  */}
-   <Button colorScheme='blue' onClick={() => fetchChatCompletion()}>Button</Button>
+   
+    <Center h='100px' color='white'>
+   <Button colorScheme='blue' onClick={() => fetchChatCompletion()}>Click Here for More Help</Button>
+   </Center>
+   </div>
    {results && (
       <div>
         <p className="resultsbox">{results}</p>
@@ -68,5 +71,6 @@ const fetchChatCompletion = async () => {
    )}
    </div>
   </Container>
+  </div>
     )
 }

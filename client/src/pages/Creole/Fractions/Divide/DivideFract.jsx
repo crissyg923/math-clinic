@@ -1,5 +1,5 @@
 import { ReactSVG } from "react-svg";
-import divfrac from '../../../../images/dividing-fract.svg'
+import divfrac from '../../../../images/creole-divfract.svg'
 import { Button, ButtonGroup, Container, Center } from '@chakra-ui/react'
 import { useState } from 'react';
 
@@ -38,32 +38,16 @@ const fetchChatCompletion = async () => {
 
 
     return (
-    // <div className="container" >
-    //   <div className="col">
-    // <div className="displaybox" style={{border: '3px solid green'}}>
-
-    //   <ReactSVG src={divfrac} className="svg-container" />
-    //   </div>
-    //  {/* <button onClick={() => fetchChatCompletion}></button>  */}
-    //  <Button colorScheme='blue' onClick={() => fetchChatCompletion()}>Button</Button>
-    //  {results && (
-    //     <div>
-    //       <p className="resultsbox">{results}</p>
-    //     </div>
-    //  )}
-    //  </div>
-    // </div>
     <div className="container">
     <Container maxW='2xl'>
     <div className="col">
-  <div className="displaybox" style={{border: '3px solid green'}}>
-
-    <ReactSVG src={divfrac} className="svg-container" />
-    </div>
-   {/* <button onClick={() => fetchChatCompletion}></button>  */}
+  <div className="displaybox">
+      <ReactSVG src={divfrac} className="svg-container" />
+  
    <Center h='100px' color='white'>
-   <Button colorScheme='blue' onClick={() => fetchChatCompletion()}>Button</Button>
+   <Button colorScheme='blue' onClick={() => fetchChatCompletion()}>Klike la a pou plis èd</Button>
    </Center>
+   </div>
    {results && (
       <div>
         <p className="resultsbox">{results}</p>

@@ -1,8 +1,8 @@
 :root {
---orange: rgb(252, 138, 62);
+--blue: #6CD9FF;
 }
 .header{
-background-color: var(--orange);
+background-color: var(--blue);
 width: 100%;
 }
 
