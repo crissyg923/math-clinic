@@ -8,10 +8,13 @@ import './index.css';
 
 import App from './App';
 import ErrorPage from './pages/ErrorPage.jsx';
-import HomePage from './pages/HomePage';
-import Fractions from './pages/Fractions'
-import Divide from './pages/Fractions/Divide/DivideFract.jsx'
+import HomePageEng from './pages/English/HomePage.jsx';
+import Fractions from './pages/English/Fractions/index.jsx'
+import Divide from './pages/English/Fractions/Divide/DivideFract.jsx'
 import Home from './pages/Language.jsx';
+import Creole from './pages/Creole/index.jsx';
+import CreoleFractions from './pages/Creole/Fractions/index.jsx'
+import CreoleDivide from './pages/Creole/Fractions/Divide/DivideFract.jsx'
 
 import { ChakraProvider } from '@chakra-ui/react'
 
@@ -30,7 +33,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'english',
-        element: <HomePage />,
+        element: <HomePageEng />,
       },
       {
         path: 'english/fractions',
@@ -39,6 +42,18 @@ const router = createBrowserRouter([
       {
         path: 'english/fractions/divide',
         element: <Divide />,
+      },
+      {
+        path:'creole',
+        element: <Creole />
+      },
+      {
+        path:'creole/fraksyon',
+        element: <CreoleFractions />
+      },
+      {
+        path:'creole/fraksyon/divizefraksyon',
+        element: <CreoleDivide />
       },
       // {
       //   path: 'contact',

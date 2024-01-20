@@ -16,12 +16,13 @@ import {
 } from '@chakra-ui/react';
 import { ChevronDownIcon } from '@chakra-ui/icons'
 
-import { Link } from '@chakra-ui/react';
+// import { Link } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 
 export default function Language() {
 return(
     <div className="container">
-<Card >
+<Card>
   <CardHeader>
     <Heading size='md'>Select a Language / Chwazi yon lang / Selecciona in idioma</Heading>
   </CardHeader>
@@ -32,15 +33,17 @@ return(
     Languages
   </MenuButton>
   <MenuList>
-  <Link to="/english">
+  <Box as="span" display="block" textAlign="left" p="0">
+  <Link to="/creole" style={{ textDecoration: 'none' }}>
     <MenuItem>Creole</MenuItem>
     </Link>
-    <Link to="/english">
+    <Link to="/english" style={{ textDecoration: 'none' }}>
     <MenuItem >English</MenuItem>
     </Link>
-    <Link to="/english">
+    <Link to="/english" style={{ textDecoration: 'none' }}>
     <MenuItem >Spanish</MenuItem>
     </Link>
+    </Box>
   </MenuList>
 </Menu>
 </Card>

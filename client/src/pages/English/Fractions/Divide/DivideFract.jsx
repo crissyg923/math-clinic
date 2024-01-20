@@ -1,5 +1,5 @@
 import { ReactSVG } from "react-svg";
-import divfrac from '../../../images/dividing-fract.svg'
+import divfrac from '../../../../images/dividing-fract.svg'
 import { Button, ButtonGroup, Container } from '@chakra-ui/react'
 import { useState } from 'react';
 

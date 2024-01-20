@@ -1,8 +1,17 @@
 .footer {
     background: var(--melon);
-    width: 100%;
-    
+    position: fixed;
     bottom: 0;
     padding: 5px;
+    width: 100%;
+    margin: auto;
+}
+.container {
+    display: flex;
+    justify-content: center;
     
+}
+
+.content {
+    justify-content:center;
 }

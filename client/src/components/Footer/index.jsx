@@ -6,9 +6,14 @@ function Footer () {
 
     return (
     <footer className="footer">
-        <h4 className="siteheader text-center">
-        <FontAwesomeIcon icon={ faCopyright } size="1x" /> 2024 Colbert
-        </h4>
+        <div className="container">
+        <div className="content">
+            <h5>
+        <FontAwesomeIcon icon={ faCopyright } size="1x" /> 
+        2024 Colbert
+        </h5>
+        </div>
+        </div>
     </footer>
     );
   }

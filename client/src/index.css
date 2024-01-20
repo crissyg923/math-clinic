@@ -5,7 +5,7 @@
 
 }
 * {
-  margin: 10px;
+  margin: 0;
   padding: 0;
   /* box-sizing: border-box; */
 }
@@ -26,8 +26,7 @@
 .container {
   display: flex;
   justify-content: center;
-  border-style: solid;
-  
+  border-style: solid; 
 }
 .displaybox {
   width: 90%;
@@ -47,6 +46,12 @@
 @media (max-width: 760px) {
   .displaybox {
     width: 100%;
+  }
+  .container {
+    display: block;
+  }
+  * {
+    margin: 0;
   }
 
   }

@@ -1,7 +1,7 @@
 import { Card, CardBody, Text, Heading} from '@chakra-ui/react'
 import { Link } from 'react-router-dom';
 
-export default function HomePage() {
+export default function HomePageEng() {
     return (
         <div className="home">
        
