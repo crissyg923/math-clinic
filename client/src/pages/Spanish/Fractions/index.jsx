@@ -1,0 +1,51 @@
+import { Card, CardBody, Text, Heading } from '@chakra-ui/react'
+import { Link } from 'react-router-dom';
+
+export default function FractionPageSpanish() {
+    return (
+   <div className='home'>
+    <div className="cardholder">
+    <Link style={{ textDecoration: 'none' }}>
+        <Card className='card'>
+        <CardBody>
+            <Heading>Multiplicar Fracciones</Heading>
+       
+          <Text>¡Obtén ayuda para multiplicar fracciones aquí!</Text>
+        </CardBody>
+      </Card> 
+      </Link>
+      </div>
+      <div className="cardholder">
+      <Link to="/espanol/fracciones/dividirfracciones" style={{ textDecoration: 'none' }}>
+      <Card className='card'>
+      <CardBody>
+        <Heading>Dividir Fracciones</Heading>
+          <Text>¡Obtén ayuda para dividir fracciones aquí!</Text>
+        </CardBody>
+      </Card> 
+      </Link>
+      </div>
+      <div className="cardholder">
+      <Link style={{ textDecoration: 'none' }}>
+      <Card className="card">
+      <CardBody>
+            <Heading>Sumar Fracciones</Heading>
+          <Text>¡Obtén ayuda para sumar fracciones aquí!</Text>
+        </CardBody>
+      </Card> 
+      </Link>
+      </div>
+      <div className="cardholder">
+      <Link style={{ textDecoration: 'none' }}>
+      <Card className="card">
+      <CardBody>
+            <Heading>Restar Fracciones</Heading>
+       
+          <Text>¡Obtén ayuda para restar fracciones aquí!</Text>
+        </CardBody>
+      </Card> 
+      </Link>
+      </div>
+    </div> 
+    )
+}

@@ -13,8 +13,11 @@ import Fractions from './pages/English/Fractions/index.jsx'
 import Divide from './pages/English/Fractions/Divide/DivideFract.jsx'
 import Home from './pages/Language.jsx';
 import Creole from './pages/Creole/index.jsx';
-import CreoleFractions from './pages/Creole/Fractions/index.jsx'
-import CreoleDivide from './pages/Creole/Fractions/Divide/DivideFract.jsx'
+import CreoleFractions from './pages/Creole/Fractions/index.jsx';
+import CreoleDivide from './pages/Creole/Fractions/Divide/DivideFract.jsx';
+import SpanishHome from './pages/Spanish/index.jsx';
+import SpanishFractions from './pages/Spanish/Fractions/index.jsx';
+import SpanishDivide from './pages/Spanish/Fractions/Divide/DivideFract.jsx'
 
 import { ChakraProvider } from '@chakra-ui/react'
 
@@ -55,18 +58,18 @@ const router = createBrowserRouter([
         path:'creole/fraksyon/divizefraksyon',
         element: <CreoleDivide />
       },
-      // {
-      //   path: 'contact',
-      //   element: <ContactPage />,
-      // },
-      // {
-      //   path: 'aboutme',
-      //   element: <AboutMe />,
-      // },
-      // {
-      //   path: 'portfolio',
-      //   element: <PortfolioPage data={data}/>,
-      // },
+      {
+        path:'spanish',
+        element: <SpanishHome />
+      },
+      {
+        path:'espanol/fracciones',
+        element: <SpanishFractions />
+      },
+      {
+        path:'espanol/fracciones/dividirfacciones',
+        element: <SpanishFractions />
+      },
     ],
   },
 ]);
