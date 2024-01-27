@@ -14,7 +14,7 @@ function Header () {
   <header>
 
     <Navbar className="header"  expand="lg">
-  <Navbar.Brand className="cg" href="#home">Ms. Colbert's Math Clinic </Navbar.Brand>
+  <Navbar.Brand className="headerlogo" href="#home">Ms. Colbert's Math Clinic </Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">

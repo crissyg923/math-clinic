@@ -1,18 +1,18 @@
 import { ReactSVG } from "react-svg";
-import divfrac from '../../../../images/creole-divfract.svg'
+import multifrac from '../../../../images/creole-multiply.svg'
 import { Button, ButtonGroup, Container, Center } from '@chakra-ui/react'
 import { useState } from 'react';
 
 
 
-export default function Divide() {
+export default function Multiply () {
 const [results, setResults] = useState('');
 
 
 const fetchChatCompletion = async () => {
   
   try {
-    const userPrompt = 'Explain how to divide a fraction in haitian creole.';
+    const userPrompt = 'Explain how to multiply fractions in haitian creole.';
     const response = await fetch('http://localhost:3001/api/chat-completion', {
       method: 'POST',
       headers: {
@@ -28,21 +28,20 @@ const fetchChatCompletion = async () => {
     const data = await response.json();
     setResults(data.response);
     console.log('Server response:', data.response);
-    // Handle the response data as needed
+
   } catch (error) {
     console.error('Error:', error);
-    // Handle errors
+
   }
 }
 
 
 
     return (
-    // <div className="container">
     <Container className="container"maxW='2xl'>
     <div className="col">
   <div className="displaybox">
-      <ReactSVG src={divfrac} className="svg-container" />
+      <ReactSVG src={multifrac} className="svg-container" />
   
    <Center h='100px' color='white'>
    <Button colorScheme='blue' onClick={() => fetchChatCompletion()}>Klike la a pou plis èd</Button>
@@ -56,6 +55,5 @@ const fetchChatCompletion = async () => {
    
    </div>
   </Container>
-  // </div>
     )
 }

@@ -5,7 +5,7 @@ export default function HomePageCreole() {
     return (
    <div className='home'>
     <div className="cardholder">
-    <Link style={{ textDecoration: 'none' }}>
+    <Link to="/creole/fraksyon/miltpliyefraksyon" style={{ textDecoration: 'none' }}>
         <Card className='card'>
         <CardBody>
             <Heading>Miltipliye Fraksyon</Heading>

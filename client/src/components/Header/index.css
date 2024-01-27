@@ -5,6 +5,10 @@
 background-color: var(--blue);
 width: 100%;
 }
+.headerlogo {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bolder;
+}
 
 @media (min-width: 760px) {
     .home {

@@ -17,7 +17,8 @@ import CreoleFractions from './pages/Creole/Fractions/index.jsx';
 import CreoleDivide from './pages/Creole/Fractions/Divide/DivideFract.jsx';
 import SpanishHome from './pages/Spanish/index.jsx';
 import SpanishFractions from './pages/Spanish/Fractions/index.jsx';
-import SpanishDivide from './pages/Spanish/Fractions/Divide/DivideFract.jsx'
+import SpanishDivide from './pages/Spanish/Fractions/Divide/DivideFract.jsx';
+import CreoleMultiply from './pages/Creole/Fractions/Multiply/index.jsx';
 
 import { ChakraProvider } from '@chakra-ui/react'
 
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
         element: <Divide />,
       },
       {
+        path: 'english/fractions/multiply',
+        element: <Divide />,
+      },
+      {
         path:'creole',
         element: <Creole />
       },
@@ -59,6 +64,10 @@ const router = createBrowserRouter([
         element: <CreoleDivide />
       },
       {
+        path:'creole/fraksyon/miltipliyefraksyon',
+        element: <CreoleMultiply />
+      },
+      {
         path:'spanish',
         element: <SpanishHome />
       },
@@ -68,7 +77,7 @@ const router = createBrowserRouter([
       },
       {
         path:'espanol/fracciones/dividirfacciones',
-        element: <SpanishFractions />
+        element: <SpanishDivide />
       },
     ],
   },
