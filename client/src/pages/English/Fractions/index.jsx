@@ -5,7 +5,7 @@ export default function HomePage() {
     return (
    <div className='home'>
     <div className="cardholder">
-    <Link style={{ textDecoration: 'none' }}>
+    <Link to="/english/fractions/multiply" style={{ textDecoration: 'none' }}>
         <Card className='card'>
         <CardBody>
             <Heading>Multiplying Fractions</Heading>

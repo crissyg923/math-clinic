@@ -1,5 +1,5 @@
 import { ReactSVG } from "react-svg";
-import multifrac from '../../../../images/multiplying-fractions.svg'
+import exponents from '../../../images/spanish-exponents.svg'
 import { Button, ButtonGroup, Container, Center } from '@chakra-ui/react'
 import { useState } from 'react';
 
@@ -12,7 +12,7 @@ const [results, setResults] = useState('');
 const fetchChatCompletion = async () => {
   
   try {
-    const userPrompt = 'Explain how to multiply fractions.';
+    const userPrompt = 'Explain exponents in spanish.';
     const response = await fetch('http://localhost:3001/api/chat-completion', {
       method: 'POST',
       headers: {
@@ -28,32 +28,31 @@ const fetchChatCompletion = async () => {
     const data = await response.json();
     setResults(data.response);
     console.log('Server response:', data.response);
-   
   } catch (error) {
     console.error('Error:', error);
-   
   }
 }
 
 
 
     return (
+
     <div className="container">
     <Container maxW='2xl'>
     <div className="col">
-  <div className="displaybox">
+  <div className="displaybox" style={{border: '3px solid green'}}>
 
-    <ReactSVG src={multifrac} className="svg-container" />
-   
-    <Center h='100px' color='white'>
-   <Button colorScheme='blue' onClick={() => fetchChatCompletion()}>Click Here for More Help</Button>
+    <ReactSVG src={exponents} className="svg-container" />
+    </div>
+   <Center h='100px' color='white'>
+   <Button colorScheme='blue' onClick={() => fetchChatCompletion()}>haga clic aquí para obtener más ayuda</Button>
    </Center>
-   </div>
    {results && (
       <div>
         <p className="resultsbox">{results}</p>
       </div>
    )}
+   
    </div>
   </Container>
   </div>

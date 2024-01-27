@@ -19,13 +19,14 @@ export default function HomePageEng() {
       </Card> 
   
       </Link>
-      
+      <Link className="link" style={{ textDecoration: 'none' }} to="/english/exponents"> 
         <Card className="card" boxShadow='dark-lg' p='6' rounded='md' bg='white'>
         <CardBody>
             <Heading>Exponents</Heading>
           <Text>Get help with exponents here!</Text>
         </CardBody>
       </Card> 
+      </Link>
         </div>
 
     )

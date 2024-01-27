@@ -38,21 +38,7 @@ const fetchChatCompletion = async () => {
 
 
     return (
-    // <div className="container" >
-    //   <div className="col">
-    // <div className="displaybox" style={{border: '3px solid green'}}>
 
-    //   <ReactSVG src={divfrac} className="svg-container" />
-    //   </div>
-    //  {/* <button onClick={() => fetchChatCompletion}></button>  */}
-    //  <Button colorScheme='blue' onClick={() => fetchChatCompletion()}>Button</Button>
-    //  {results && (
-    //     <div>
-    //       <p className="resultsbox">{results}</p>
-    //     </div>
-    //  )}
-    //  </div>
-    // </div>
     <div className="container">
     <Container maxW='2xl'>
     <div className="col">

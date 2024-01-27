@@ -19,13 +19,14 @@ export default function HomePageCreole() {
       </Card> 
   
       </Link>
-      
+      <Link className="link" style={{ textDecoration: 'none' }} to="/creole/ekspozan">
         <Card className="card" boxShadow='dark-lg' p='6' rounded='md' bg='white'>
         <CardBody>
             <Heading>Ekspozan</Heading>
           <Text>Jwenn ed ak ekspozan isit la!</Text>
         </CardBody>
       </Card> 
+      </Link>
         </div>
 
     )

@@ -5,7 +5,7 @@ export default function FractionPageSpanish() {
     return (
    <div className='home'>
     <div className="cardholder">
-    <Link style={{ textDecoration: 'none' }}>
+    <Link to="/espanol/fracciones/multiplicarfracciones" style={{ textDecoration: 'none' }}>
         <Card className='card'>
         <CardBody>
             <Heading>Multiplicar Fracciones</Heading>

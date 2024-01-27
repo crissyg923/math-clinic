@@ -6,7 +6,7 @@ export default function HomePageSpanish() {
         <div className="home">
        
 
-        <Link className="link" style={{ textDecoration: 'none' }} to="/creole/fraksyon">
+        <Link className="link" style={{ textDecoration: 'none' }} to="/espanol/fracciones">
         
         <Card className="card" boxShadow='dark-lg' p='6' rounded='md' bg='white'>
             
@@ -19,13 +19,14 @@ export default function HomePageSpanish() {
       </Card> 
   
       </Link>
-      
+      <Link className="link" style={{ textDecoration: 'none' }} to="/espanol/exponentes">
         <Card className="card" boxShadow='dark-lg' p='6' rounded='md' bg='white'>
         <CardBody>
             <Heading>Exponentes</Heading>
           <Text>¡Obtén ayuda con exponentes aquí!</Text>
         </CardBody>
       </Card> 
+      </Link>
         </div>
 
     )

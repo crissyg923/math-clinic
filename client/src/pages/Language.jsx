@@ -21,7 +21,7 @@ import { Link } from 'react-router-dom';
 
 export default function Language() {
 return(
-    <div className="container">
+<div className="container">
 <Card>
   <CardHeader>
     <Heading size='md'>Select a Language / Chwazi yon lang / Selecciona in idioma</Heading>
@@ -40,7 +40,7 @@ return(
     <Link to="/english" style={{ textDecoration: 'none' }}>
     <MenuItem >English</MenuItem>
     </Link>
-    <Link to="/english" style={{ textDecoration: 'none' }}>
+    <Link to="/spanish" style={{ textDecoration: 'none' }}>
     <MenuItem >Spanish</MenuItem>
     </Link>
     </Box>
