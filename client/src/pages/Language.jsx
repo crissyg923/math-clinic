@@ -40,8 +40,8 @@ return(
     <Link to="/english" style={{ textDecoration: 'none' }}>
     <MenuItem >English</MenuItem>
     </Link>
-    <Link to="/spanish" style={{ textDecoration: 'none' }}>
-    <MenuItem >Spanish</MenuItem>
+    <Link to="/espanol" style={{ textDecoration: 'none' }}>
+    <MenuItem >Espanol</MenuItem>
     </Link>
     </Box>
   </MenuList>
