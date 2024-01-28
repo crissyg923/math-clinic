@@ -13,7 +13,7 @@ const [results, setResults] = useState('');
 const fetchChatCompletion = async () => {
   
   try {
-    const userPrompt = 'Explain exponents in haitian creole.';
+    const userPrompt = 'Explain exponents in the language of haitian creole.';
     const response = await fetch('/.netlify/functions/chat-completion', {
       method: 'POST',
       headers: {
