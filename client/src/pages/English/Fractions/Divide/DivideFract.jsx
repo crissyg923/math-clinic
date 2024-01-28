@@ -2,7 +2,7 @@ import { ReactSVG } from "react-svg";
 import divfrac from '../../../../images/new-dividing-fract.svg'
 import { Button, ButtonGroup, Container, Center } from '@chakra-ui/react'
 import { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 
 
 export default function Divide() {
@@ -42,12 +42,17 @@ const fetchChatCompletion = async () => {
     <div className="container">
     <Container maxW='2xl'>
     <div className="col">
+    <Link to='/english/fractions'>
+ <Center h='70px' color='white'>
+   <Button colorScheme='pink'>Back</Button>
+   </Center>
+   </Link>
   <div className="displaybox">
 
     <ReactSVG src={divfrac} className="svg-container" />
    
     <Center h='100px' color='white'>
-   <Button colorScheme='blue' onClick={() => fetchChatCompletion()}>Click Here for More Help</Button>
+   <Button colorScheme='pink' onClick={() => fetchChatCompletion()}>Click Here for More Help</Button>
    </Center>
    </div>
    {results && (

@@ -3,7 +3,10 @@
   
   line-height: 1.5;
   font-weight: 400;
-
+  --blue: #6CD9FF;
+  --pink: rgb(247, 112, 159);
+  --green: rgb(93, 234, 145);
+    
 }
 * {
   margin: 0;
@@ -16,6 +19,7 @@
 }
 .home{
   margin: 10px;
+
 }
 .card {
   margin-bottom: 20px
@@ -25,6 +29,23 @@
   color: yellow;
   /* border-color: yellow; */
 }
+
+.backbutton {
+  font-size: 18px;
+  padding-left: 10px;
+  margin: 3px;
+  margin-bottom: 3%;
+  text-align: center;
+  
+}
+.innerbutton {
+  padding: 3px;
+  /* font-family: 'Meow Script'; */
+  border: solid var(--green);
+  background-color: var(--pink);
+  color: black;
+}
+
 .container {
   display: flex;
   justify-content: center;

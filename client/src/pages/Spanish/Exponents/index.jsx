@@ -2,6 +2,7 @@ import { ReactSVG } from "react-svg";
 import exponents from '../../../images/spanish-exponents.svg'
 import { Button, ButtonGroup, Container, Center } from '@chakra-ui/react'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -40,6 +41,11 @@ const fetchChatCompletion = async () => {
     <div className="container">
     <Container maxW='2xl'>
     <div className="col">
+    <Link to='/espanol'>
+ <Center h='70px' color='white'>
+   <Button colorScheme='pink'>Regresa</Button>
+   </Center>
+   </Link>
   <div className="displaybox" style={{border: '3px solid green'}}>
 
     <ReactSVG src={exponents} className="svg-container" />

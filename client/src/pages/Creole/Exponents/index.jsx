@@ -2,6 +2,7 @@ import { ReactSVG } from "react-svg";
 import exponents from '../../../images/creole-exponents.svg';
 import { Button, ButtonGroup, Container, Center } from '@chakra-ui/react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -40,10 +41,15 @@ const fetchChatCompletion = async () => {
     return (
     <Container className="container"maxW='2xl'>
     <div className="col">
+    <Link to='/creole'>
+ <Center h='70px' color='white'>
+   <Button colorScheme='pink'>Tounen</Button>
+   </Center>
+   </Link>
   <div className="displaybox">
       <ReactSVG src={exponents} className="svg-container" />
    <Center h='100px' color='white'>
-   <Button colorScheme='blue' onClick={() => fetchChatCompletion()}>Klike la a pou plis èd</Button>
+   <Button colorScheme='pink' onClick={() => fetchChatCompletion()}>Klike la a pou plis èd</Button>
    </Center>
    </div>
    {results && (

@@ -1,12 +1,19 @@
-import { Card, CardBody, Text, Heading } from '@chakra-ui/react'
+import { Card, CardBody, Text, Heading, Center, Button } from '@chakra-ui/react'
 import { Link } from 'react-router-dom';
 
 export default function FractionPageSpanish() {
     return (
    <div className='home'>
+               <Link to='/espanol'>
+ <Center h='70px' color='white'>
+   <Button colorScheme='pink'>Regresa</Button>
+   </Center>
+   </Link>
+   
     <div className="cardholder">
+
     <Link to="/espanol/fracciones/multiplicarfracciones" style={{ textDecoration: 'none' }}>
-        <Card className='card'>
+        <Card className='card'w="75%">
         <CardBody>
             <Heading>Multiplicar Fracciones</Heading>
        
@@ -45,7 +52,9 @@ export default function FractionPageSpanish() {
         </CardBody>
       </Card> 
       </Link>
+    
       </div>
+      
     </div> 
     )
 }

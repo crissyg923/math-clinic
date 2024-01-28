@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 export default function HomePageSpanish() {
     return (
         <div className="home">
-       
 
         <Link className="link" style={{ textDecoration: 'none' }} to="/espanol/fracciones">
         

@@ -2,6 +2,7 @@ import { ReactSVG } from "react-svg";
 import multifrac from '../../../../images/spanish-multiply.svg'
 import { Button, ButtonGroup, Container, Center } from '@chakra-ui/react'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -40,12 +41,17 @@ const fetchChatCompletion = async () => {
     <div className="container">
     <Container maxW='2xl'>
     <div className="col">
+    <Link to='/espanol/fracciones'>
+ <Center h='70px' color='white'>
+   <Button colorScheme='pink'>Regresa</Button>
+   </Center>
+   </Link>
   <div className="displaybox" style={{border: '3px solid green'}}>
 
     <ReactSVG src={multifrac} className="svg-container" />
     </div>
    <Center h='100px' color='white'>
-   <Button colorScheme='blue' onClick={() => fetchChatCompletion()}>Button</Button>
+   <Button colorScheme='pink' onClick={() => fetchChatCompletion()}>haga clic aquí para obtener más ayuda</Button>
    </Center>
    {results && (
       <div>
