@@ -11,7 +11,7 @@ const port = process.env.PORT || 3001;
 
 app.use(express.json());
 app.use(cors());
-app.use(express.static(path.join(__dirname, '../client/dist')));
+app.use(express.static(path.join(__dirname, 'client/dist')));
 
 const openai = new OpenAI({ key: process.env.VITE_OPENAI_API_KEY });
 app.post('/api/chat-completion', async (req, res) => {
