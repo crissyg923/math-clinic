@@ -4,14 +4,14 @@ import express from 'express';
 import cors from 'cors';
 
 
-const apiKey = process.env.OPENAI_API_KEY;
+const apiKey = process.env.VITE_OPENAI_API_KEY;
 const app = express();
 const port = process.env.PORT || 3001;
 
 app.use(express.json());
 app.use(cors());
 
-const openai = new OpenAI({ key: process.env.OPENAI_API_KEY });
+const openai = new OpenAI({ key: process.env.VITE_OPENAI_API_KEY });
 app.post('/api/chat-completion', async (req, res) => {
   try {
     const { prompt } = req.body;
