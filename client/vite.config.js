@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'https://main--comforting-daffodil-c44386.netlify.app/',
+  base: 'https://mathclinic.netlify.app/',
   plugins: [react()],
   server: {
     port: 3000,
