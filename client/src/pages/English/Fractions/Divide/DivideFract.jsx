@@ -13,7 +13,7 @@ const fetchChatCompletion = async () => {
   
   try {
     const userPrompt = 'Explain how to divide a fraction.';
-    const response = await fetch('http://localhost:3001/api/chat-completion', {
+    const response = await fetch('/.netlify/functions/chat-completion', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
