@@ -2,7 +2,7 @@ import OpenAI from "openai";
 import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
-
+import path from 'path';
 
 
 const apiKey = process.env.VITE_OPENAI_API_KEY;
@@ -11,13 +11,7 @@ const port = process.env.PORT || 3001;
 
 app.use(express.json());
 app.use(cors());
-app.use(express.static('dist', {
-  setHeaders(res, path) {
-    if (path.endsWith('.js')) {
-      res.setHeader('Content-Type', 'application/javascript');
-    }
-  },
-}));
+app.use(express.static(path.join(__dirname, '../client/dist')));
 
 const openai = new OpenAI({ key: process.env.VITE_OPENAI_API_KEY });
 app.post('/api/chat-completion', async (req, res) => {
