@@ -23,6 +23,7 @@ exports.handler = async function (event, context) {
         { role: 'user', content: prompt },
       ],
       model: 'gpt-3.5-turbo',
+      stream:True,
     });
 
     return {

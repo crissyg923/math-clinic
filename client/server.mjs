@@ -25,7 +25,7 @@ app.post('/api/chat-completion', async (req, res) => {
         { role: 'system', content: 'You are a helpful assistant tutoring fourth graders in math.' },
         { role: 'user', content: prompt },
       ],
-      model: 'gpt-3.5-turbo',
+      model: 'gpt-3.5-turbo'
     });
 
     res.json({ response: completion.choices[0].message.content });
