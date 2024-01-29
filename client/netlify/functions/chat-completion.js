@@ -5,7 +5,7 @@ const { OpenAI } = require('openai');
 exports.handler = async function (event, context) {
   console.log("Function received a request:", event)
   try {
-    const openai = new OpenAI({ key: process.env.VITE.OPENAI_API_KEY });
+    const openai = new OpenAI({ key: process.env.OPENAI_API_KEY });
 
     if (event.httpMethod !== 'POST') {
       return {
