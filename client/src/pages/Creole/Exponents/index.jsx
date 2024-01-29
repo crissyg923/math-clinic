@@ -54,7 +54,7 @@ const fetchChatCompletion = async () => {
    </div>
    {results && (
       <div>
-        <p className="resultsbox">{results}</p> : <p>Loading....</p>
+        <p className="resultsbox">{results}</p>
       </div>
    )}
    
