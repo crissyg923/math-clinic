@@ -51,7 +51,7 @@ const fetchChatCompletion = async () => {
     <ReactSVG src={multifrac} className="svg-container" />
     </div>
    <Center h='100px' color='white'>
-   <Button colorScheme='pink' onClick={() => fetchChatCompletion()}>haga clic aquí para obtener más ayuda</Button>
+   <Button colorScheme='pink' onClick={() => fetchChatCompletion()}>¡Haga clic aquí para obtener más ayuda de ChatGPT! Esto puede tardar unos momentos.</Button>
    </Center>
    {results && (
       <div>

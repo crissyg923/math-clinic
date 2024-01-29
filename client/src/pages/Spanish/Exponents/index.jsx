@@ -51,7 +51,7 @@ const fetchChatCompletion = async () => {
     <ReactSVG src={exponents} className="svg-container" />
     </div>
    <Center h='100px' color='white'>
-   <Button colorScheme='blue' onClick={() => fetchChatCompletion()}>haga clic aquí para obtener más ayuda</Button>
+   <Button colorScheme='blue' onClick={() => fetchChatCompletion()}>¡Haga clic aquí para obtener más ayuda de ChatGPT! Esto puede tardar unos momentos.</Button>
    </Center>
    {results && (
       <div>

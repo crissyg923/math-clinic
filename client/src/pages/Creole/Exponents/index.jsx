@@ -49,7 +49,9 @@ const fetchChatCompletion = async () => {
   <div className="displaybox">
       <ReactSVG src={exponents} className="svg-container" />
    <Center h='100px' color='white'>
-   <Button colorScheme='pink' onClick={() => fetchChatCompletion()}>Klike la a pou plis èd</Button>
+   <Button colorScheme='pink' onClick={() => fetchChatCompletion()}>
+    Klike la a pou jwenn plis èd nan men ChatGPT! Sa a ka pran kèk moman.
+   </Button>
    </Center>
    </div>
    {results && (
