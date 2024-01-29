@@ -25,7 +25,7 @@ export default function HomePageCreole() {
       </Card> 
       </Link>
       </div>
-      <div className="cardholder">
+      {/* <div className="cardholder">
       <Link style={{ textDecoration: 'none' }}>
       <Card className="card">
       <CardBody>
@@ -34,8 +34,8 @@ export default function HomePageCreole() {
         </CardBody>
       </Card> 
       </Link>
-      </div>
-      <div className="cardholder">
+      </div> */}
+      {/* <div className="cardholder">
       <Link style={{ textDecoration: 'none' }}>
       <Card className="card">
       <CardBody>
@@ -45,7 +45,7 @@ export default function HomePageCreole() {
         </CardBody>
       </Card> 
       </Link>
-      </div>
+      </div> */}
     </div> 
     )
 }

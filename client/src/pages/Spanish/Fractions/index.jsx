@@ -32,7 +32,7 @@ export default function FractionPageSpanish() {
       </Card> 
       </Link>
       </div>
-      <div className="cardholder">
+      {/* <div className="cardholder">
       <Link style={{ textDecoration: 'none' }}>
       <Card className="card">
       <CardBody>
@@ -54,7 +54,7 @@ export default function FractionPageSpanish() {
       </Link>
     
       </div>
-      
+       */}
     </div> 
     )
 }
