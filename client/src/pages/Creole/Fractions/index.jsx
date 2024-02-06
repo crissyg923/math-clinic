@@ -25,16 +25,16 @@ export default function HomePageCreole() {
       </Card> 
       </Link>
       </div>
-      {/* <div className="cardholder">
-      <Link style={{ textDecoration: 'none' }}>
+      <div className="cardholder">
+      <Link to="/creole/fraksyon/regroupementfraksyon" style={{ textDecoration: 'none' }}>
       <Card className="card">
       <CardBody>
-            <Heading>Ajoute Fraksyon</Heading>
-          <Text>Jwenn ed pou ajoute fraksyon isit la!</Text>
+            <Heading>Regroupement Fraksyon</Heading>
+          <Text>Jwenn ed pou rregroupement rraksyon isit la!</Text>
         </CardBody>
       </Card> 
       </Link>
-      </div> */}
+      </div>
       {/* <div className="cardholder">
       <Link style={{ textDecoration: 'none' }}>
       <Card className="card">

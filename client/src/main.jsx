@@ -13,12 +13,14 @@ import Fractions from './pages/English/Fractions/index.jsx'
 import Divide from './pages/English/Fractions/Divide/DivideFract.jsx';
 import Exponents from  './pages/English/Exponents/index.jsx';
 import Multiply from './pages/English/Fractions/Multiply/index.jsx';
+import Regroup from './pages/English/Fractions/Regrouping/index.jsx';
 import Home from './pages/Language.jsx';
 import Creole from './pages/Creole/index.jsx';
 import CreoleExponents from './pages/Creole/Exponents/index.jsx';
 import CreoleFractions from './pages/Creole/Fractions/index.jsx';
 import CreoleDivide from './pages/Creole/Fractions/Divide/DivideFract.jsx';
 import CreoleMultiply from './pages/Creole/Fractions/Multiply/index.jsx';
+import CreoleRegroup from './pages/Creole/Fractions/Regrouping/index.jsx'
 import SpanishHome from './pages/Spanish/index.jsx';
 import SpanishExponents from './pages/Spanish/Exponents/index.jsx';
 import SpanishFractions from './pages/Spanish/Fractions/index.jsx';
@@ -59,6 +61,10 @@ const router = createBrowserRouter([
         element: <Multiply />,
       },
       {
+        path: 'english/fractions/regrouping',
+        element: <Regroup />,
+      },
+      {
         path: 'english/exponents',
         element: <Exponents />,
       },
@@ -83,8 +89,8 @@ const router = createBrowserRouter([
         element: <CreoleMultiply />
       },
       {
-        path:'creole/fraksyon/miltipliyefraksyon',
-        element: <CreoleMultiply />
+        path:'creole/fraksyon/regroupementfraksyon',
+        element: <CreoleRegroup />
       },
       {
         path:'espanol',

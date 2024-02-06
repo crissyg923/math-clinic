@@ -25,17 +25,17 @@ export default function HomePage() {
       </Card> 
       </Link>
       </div>
-      {/* <div className="cardholder">
-      <Link style={{ textDecoration: 'none' }}>
+      <div className="cardholder">
+      <Link to="/english/fractions/regrouping" style={{ textDecoration: 'none' }}>
       <Card className="card">
       <CardBody>
-            <Heading>Adding Fractions</Heading>
-          <Text>Get help with adding fractions here!</Text>
+            <Heading>Regrouping Fractions</Heading>
+          <Text>Get help with regrouping fractions here!</Text>
         </CardBody>
       </Card> 
       </Link>
       </div>
-      <div className="cardholder">
+      {/* <div className="cardholder">
       <Link style={{ textDecoration: 'none' }}>
       <Card className="card">
       <CardBody>
