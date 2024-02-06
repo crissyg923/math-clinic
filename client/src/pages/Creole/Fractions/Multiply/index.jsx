@@ -1,6 +1,6 @@
 import { ReactSVG } from "react-svg";
 import multifrac from '../../../../images/creole-multiply.svg'
-import { Button, ButtonGroup, Container, Center } from '@chakra-ui/react'
+import { Button, ButtonGroup, Container, Center, Flex } from '@chakra-ui/react'
 import { useState } from 'react';
 
 
@@ -43,8 +43,8 @@ const fetchChatCompletion = async () => {
   <div className="displaybox">
       <ReactSVG src={multifrac} className="svg-container" />
   
-   <Center h='100px' color='white'>
-   <Button colorScheme='blue' onClick={() => fetchChatCompletion()}>Klike la a pou jwenn plis èd nan men ChatGPT! Sa a ka pran kèk moman.</Button>
+   <Center h='100px' color='white'> 
+   <Button  colorScheme='blue' onClick={() => fetchChatCompletion()}>Klike la a pou jwenn plis èd nan men ChatGPT! Sa a ka pran kèk moman.</Button>
    </Center>
    </div>
    {results && (

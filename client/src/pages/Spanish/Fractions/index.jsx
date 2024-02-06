@@ -32,17 +32,17 @@ export default function FractionPageSpanish() {
       </Card> 
       </Link>
       </div>
-      {/* <div className="cardholder">
-      <Link style={{ textDecoration: 'none' }}>
+      <div className="cardholder">
+      <Link to="/espanol/fracciones/reaguparfracciones" style={{ textDecoration: 'none' }}>
       <Card className="card">
       <CardBody>
-            <Heading>Sumar Fracciones</Heading>
-          <Text>¡Obtén ayuda para sumar fracciones aquí!</Text>
+            <Heading>Reagrupar fracciones</Heading>
+          <Text>¡Obtén ayuda para reagrupar fracciones aquí!</Text>
         </CardBody>
       </Card> 
       </Link>
       </div>
-      <div className="cardholder">
+      {/* <div className="cardholder">
       <Link style={{ textDecoration: 'none' }}>
       <Card className="card">
       <CardBody>
@@ -53,8 +53,8 @@ export default function FractionPageSpanish() {
       </Card> 
       </Link>
     
-      </div>
-       */}
+      </div> */}
+      
     </div> 
     )
 }

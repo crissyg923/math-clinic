@@ -83,6 +83,8 @@
   * {
     margin: 0;
   }
-
+.chatbutton {
+  display: flex;
+}
   }
   

@@ -23,7 +23,8 @@ import SpanishHome from './pages/Spanish/index.jsx';
 import SpanishExponents from './pages/Spanish/Exponents/index.jsx';
 import SpanishFractions from './pages/Spanish/Fractions/index.jsx';
 import SpanishDivide from './pages/Spanish/Fractions/Divide/DivideFract.jsx';
-import SpanishMultiply from './pages/Spanish/Fractions/Multiply/index.jsx'
+import SpanishMultiply from './pages/Spanish/Fractions/Multiply/index.jsx';
+import SpanishRegroup from './pages/Spanish/Fractions/Regrouping/index.jsx';
 
 
 import { ChakraProvider } from '@chakra-ui/react'
@@ -82,6 +83,10 @@ const router = createBrowserRouter([
         element: <CreoleMultiply />
       },
       {
+        path:'creole/fraksyon/miltipliyefraksyon',
+        element: <CreoleMultiply />
+      },
+      {
         path:'espanol',
         element: <SpanishHome />
       },
@@ -100,6 +105,10 @@ const router = createBrowserRouter([
       {
         path:'espanol/fracciones/multiplicarfracciones',
         element: <SpanishMultiply />
+      },
+      {
+        path:'espanol/fracciones/reaguparfracciones',
+        element: <SpanishRegroup />
       },
     ],
   },
