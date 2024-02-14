@@ -17,13 +17,22 @@ export default function HomePageCreole() {
         </CardBody>
        
       </Card> 
-  
       </Link>
+      
       <Link className="link" style={{ textDecoration: 'none' }} to="/creole/ekspozan">
         <Card className="card" boxShadow='dark-lg' p='6' rounded='md' bg='white'>
         <CardBody>
             <Heading>Ekspozan</Heading>
           <Text>Jwenn ed ak ekspozan isit la!</Text>
+        </CardBody>
+      </Card> 
+      </Link>
+
+      <Link className="link" style={{ textDecoration: 'none' }} to="/creole/desimal">
+        <Card className="card" boxShadow='dark-lg' p='6' rounded='md' bg='white'>
+        <CardBody>
+            <Heading>Desimal</Heading>
+          <Text>Jwenn ed ak desimal isit la!</Text>
         </CardBody>
       </Card> 
       </Link>

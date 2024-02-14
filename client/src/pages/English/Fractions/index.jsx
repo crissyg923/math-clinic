@@ -15,6 +15,7 @@ export default function HomePage() {
       </Card> 
       </Link>
       </div>
+
       <div className="cardholder">
       <Link to="/english/fractions/divide" style={{ textDecoration: 'none' }}>
       <Card className='card'>
@@ -25,6 +26,7 @@ export default function HomePage() {
       </Card> 
       </Link>
       </div>
+      
       <div className="cardholder">
       <Link to="/english/fractions/regrouping" style={{ textDecoration: 'none' }}>
       <Card className="card">

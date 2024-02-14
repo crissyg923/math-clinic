@@ -26,6 +26,15 @@ export default function HomePageSpanish() {
         </CardBody>
       </Card> 
       </Link>
+
+      <Link className="link" style={{ textDecoration: 'none' }} to="/espanol/decimales">
+        <Card className="card" boxShadow='dark-lg' p='6' rounded='md' bg='white'>
+        <CardBody>
+            <Heading>Decimales</Heading>
+          <Text>¡Obtén ayuda con decimales aquí!</Text>
+        </CardBody>
+      </Card> 
+      </Link>
         </div>
 
     )
