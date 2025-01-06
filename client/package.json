@@ -7,7 +7,7 @@
   },  
   "type": "module",
   "scripts": {
-    "start": "concurrently \"vite\" \"node server.js\"",
+    "start": "concurrently \"vite\" \"node server.mjs\"",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
