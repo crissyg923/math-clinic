@@ -19,7 +19,7 @@ exports.handler = async function (event, context) {
     // Add your OpenAI logic here to generate a response based on the prompt
     const completion = await openai.chat.completions.create({
       messages: [
-        { role: 'system', content: 'You are a helpful assistant tutoring fourth graders in math.' },
+        { role: 'system', content: 'You are a helpful assistant tutoring fourth graders in math using basic and relatable examples in the language specified.' },
         { role: 'user', content: prompt },
       ],
       model: 'gpt-3.5-turbo',
